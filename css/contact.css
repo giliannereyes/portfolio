@@ -1,0 +1,89 @@
+/* CONTACT SECTION */
+.contact-section {
+    min-height: 90vh; /* Fill entire viewport height */
+    display: flex; /* Make section a flex container */
+    align-items: center; /* Center content vertically */
+    justify-content: center; /* Center content horizontally */
+    color: #FFFFFF; /* White text */
+    text-align: center; /* Center text horizontally */
+    padding: 0 20px; /* Side padding if needed */
+    background-color: #1F1F2E; /* Dark navy background */
+}
+
+.contact-container {
+    max-width: 800px; /* Limit container width */
+    margin: 0 auto;
+}
+
+.contact-container h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.contact-container h1 span {
+    color: #FFC107;
+}
+
+.subtitle {
+    color: #ccc;
+    max-width: 600px;
+    margin: 0 auto 40px;
+    line-height: 1.6;
+}
+
+/* Contact Info */
+.contact-info {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center;    /* Center them horizontally */
+    gap: 20px; /* Spacing between ul and social icons */
+}
+
+/* Contact List */
+.contact-info ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center; /* Keep text centered */
+}
+
+.contact-info ul li {
+    margin-bottom: 10px;
+    color: #ccc;
+}
+
+.contact-info li strong {
+    color: #fff;
+}
+
+.contact-info a {
+    color: #FFC107; /* Gold link color */
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+/* Social Icons Row */
+.social-icons {
+    display: flex;
+    gap: 15px; /* Space between icons */
+}
+
+.social-icons a {
+    color: #FFC107; /* Gold icon color */
+    font-size: 2.0rem;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #e0a800; /* Slightly darker gold on hover */
+}
+
+/* Responsive for smaller screens */
+@media (max-width: 768px) {
+    .contact-container h1 {
+        font-size: 2rem;
+    }
+}

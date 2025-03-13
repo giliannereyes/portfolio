@@ -1,0 +1,90 @@
+/* Skills Section */
+.skills-section {
+    padding: 80px 20px;
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.skills-container {
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+/* Heading */
+.skills-container h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+.skills-container h2 span {
+    color: #FFC107; /* Gold highlight for "Skills" */
+}
+
+/* Intro Paragraph */
+.skills-intro {
+    max-width: 600px;
+    margin: 0 auto 40px;
+    color: #ccc;
+    line-height: 1.6;
+}
+
+.projects-btn {
+    display: inline-block;
+    background-color: #FFC107;  /* Yellow theme */
+    color: #000;                /* Black text for contrast */
+    padding: 12px 30px;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 0;           /* Space above the button */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.projects-btn:hover {
+    background-color: #e0a800;  /* Darken on hover */
+    transform: translateY(-2px);
+}
+
+/* Skills Grid */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+/* Skill Box */
+.skill-box {
+    background-color: #2A2D44;
+    border-radius: 10px;
+    padding: 30px 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+.skill-box:hover {
+    transform: translateY(-5px);
+}
+
+/* Skill Icon */
+.skill-icon {
+    font-size: 2.5rem;
+    color: #FFC107; /* Gold icon color */
+    margin-bottom: 15px;
+}
+
+/* Skill Title */
+.skill-box h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+/* Skill Description */
+.skill-box p {
+    font-size: 1rem;
+    color: #ccc;
+    line-height: 1.5;
+}
+
