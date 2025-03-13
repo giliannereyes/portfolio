@@ -2,7 +2,7 @@
 
 Welcome to my personal portfolio website! This is a showcase of my **projects, skills, and experience** as a Computer Engineering student at NTNU.
 
-# 🌐 Website
+## 🌐 Website
 **[View Portfolio Here](https://giliannereyes.github.io/portfolio/)**
 
 ## 📌 About This Portfolio
