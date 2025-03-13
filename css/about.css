@@ -1,0 +1,178 @@
+/** ABOUT SECTION **/
+.about-section {
+    min-height: 90vh; /* Makes the section fill the full viewport height */
+    display: flex;
+    align-items: center;  /* Centers content vertically */
+    justify-content: center;  /* Centers content horizontally (optional) */
+    padding: 60px 0;
+    color: #FFF; /* Default text color is white */
+    background-color: #1F1F2E; /* Dark navy background */
+}
+
+/* Flex container for the two boxes */
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 200px;         /* Space between image box & text box */
+    max-width: 1200px; /* Center the content */
+    margin: 0 auto;
+    padding: 0 20px;   /* Slight side padding for smaller screens */
+}
+
+/* LEFT BOX: Image with layered effect */
+.image-container {
+    position: relative;
+    width: 400px;    /* Adjust as needed */
+    height: 400px;
+}
+
+/* Main white box for the image */
+.image-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: #FFF;  /* White box for the photo */
+    border-radius: 10px;     /* Rounded corners (optional) */
+    overflow: hidden;        /* Ensures the image doesn't spill out */
+    z-index: 1;              /* Above the colored box behind */
+}
+
+/* Actual image inside the white box */
+.image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Crop/fit the image nicely */
+}
+
+/* Gold offset box behind the white box */
+.image-container::before {
+    content: "";
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 100%;
+    height: 100%;
+    background-color: #FFC107;
+    border-radius: 10px;
+    z-index: 0;               /* Behind the white box */
+}
+
+/* RIGHT BOX: Text Container */
+.text-container {
+    max-width: 500px; /* Adjust for your desired text width */
+}
+
+/* About Me Heading */
+.text-container h2 {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+    color: #FFF; /* White text */
+}
+
+/* Highlight "Me" in gold */
+.text-container h2 span {
+    color: #FFC107;
+}
+
+/* Paragraph styling */
+.text-container p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #CCC; /* Slightly lighter text for contrast */
+}
+
+/* Contact Me Button */
+.text-container button {
+    background-color: #FFC107;
+    color: #000;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect for button */
+.text-container button:hover {
+    background-color: #C89E2C; /* Darken the gold on hover */
+}
+
+/* INTERESTS SECTION*/
+.interests-section {
+    background-color: #1F1F2E; /* Dark navy background */
+    padding: 60px 0;
+    text-align: center;
+    color: #FFF;
+}
+
+.interests-section h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.interests-section h2 span {
+    color: #E3B341; /* Gold highlight */
+}
+
+.interests-section p {
+    max-width: 600px;
+    margin: 0 auto 40px;
+    color: #CCC;
+}
+
+/* Grid of Interests */
+.interests-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+
+/* Individual Item */
+.interest-item {
+    position: relative;
+    background-color: #22253A; /* Slightly lighter than background */
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    /* Transition for scale effect */
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+/* Scale only the hovered item */
+.interest-item:hover {
+    transform: scale(1.05);  /* Slight enlargement on hover */
+    background-color: #2A2D44; /* Subtle color change if desired */
+}
+
+/* Image */
+.interest-item img {
+    width: 100%;
+    display: block;
+    border-bottom: 1px solid #333; /* Divider under the image */
+}
+
+/* Description (hidden by default) */
+.interest-desc {
+    margin: 0;
+    padding: 10px;
+    color: #FFF;
+}
+
+/* Show the description on hover of the container */
+.interest-item:hover .interest-desc {
+    display: block;
+    animation: fadeIn 0.4s ease;
+}
+
+/* Simple fade-in animation */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}

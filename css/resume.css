@@ -1,0 +1,79 @@
+/* RESUME SECTION */
+.resume-section {
+    padding: 80px 20px;
+    text-align: center;
+    color: #FFF;
+}
+
+/* Resume Container */
+.resume-container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Heading */
+.resume-container h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.resume-container h2 span {
+    color: #FFC107; /* Gold highlight for "Experience" */
+}
+
+/* Intro Paragraph */
+.resume-intro {
+    max-width: 600px;
+    margin: 0 auto 40px;
+    color: #ccc;
+    line-height: 1.6;
+}
+
+/* Resume Grid */
+.resume-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+/* Resume Box (Experience Card) */
+.resume-box {
+    background-color: #2A2D44;
+    border-radius: 10px;
+    padding: 30px 20px;
+    text-align: left;
+    transition: transform 0.3s ease;
+}
+
+.resume-box:hover {
+    transform: translateY(-5px);
+}
+
+/* Date */
+.resume-box .date {
+    font-size: 0.9rem;
+    color: #aaa;
+    margin-bottom: 5px;
+}
+
+/* Job Title */
+.resume-box h3 {
+    font-size: 1.5rem;
+    color: #FFC107; /* Gold color for job titles */
+    margin-bottom: 5px;
+}
+
+/* Company */
+.resume-box .company {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #FFF;
+}
+
+/* Description */
+.resume-box p {
+    font-size: 1rem;
+    color: #ccc;
+    line-height: 1.5;
+}
