@@ -7,6 +7,7 @@
     <!-- Link to your main CSS or a new projects.css -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/projects.css">
+    <script src="js/projects.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
@@ -30,7 +31,9 @@
 <!-- PROJECTS SECTION -->
 <section class="projects-section">
     <div class="projects-container">
-        <h2>My <span>Projects</span></h2>
+        <h2 class="typing">
+            <span id="my-text"></span><span id="projects-text"></span>
+        </h2>
         <p class="projects-intro">
             There are many variations of passages of Lorem Ipsum available,
             but the majority have suffered alteration in some form by injected humour.
@@ -42,7 +45,7 @@
                 <i class="fab fa-github project-icon"></i>
                 <h3>Portfolio</h3>
                 <p>
-                    A static website built with HTML and CSS.
+                    A static website built with HTML, CSS and JavaScript.
                 </p>
                 <a href="https://github.com/giliannereyes/portfolio#" target="_blank" class="project-btn">
                     View project

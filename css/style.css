@@ -93,6 +93,35 @@ nav a:hover {
     color: #cccccc; /* Slightly lighter text */
 }
 
+/* Fade-in animation */
+.subheading,
+.description,
+.contact-btn,
+.hero-image {
+    opacity: 0;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Typing animation cursor */
+.typing::after {
+    content: "|"; /* Cursor effect */
+    display: inline-block;
+    animation: blink 0.7s infinite;
+}
+
+/* Define blinking animation */
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
+
+
 /* Contact Button */
 .contact-btn {
     background-color: #FFC107;

@@ -15,9 +15,10 @@
 .resume-container h2 {
     font-size: 2.5rem;
     margin-bottom: 10px;
+    color: #FFFFFF;
 }
 
-.resume-container h2 span {
+#experience-text {
     color: #FFC107; /* Gold highlight for "Experience" */
 }
 
@@ -27,6 +28,25 @@
     margin: 0 auto 40px;
     color: #ccc;
     line-height: 1.6;
+}
+
+.download-cv-btn{
+    display: inline-block;
+    background-color: #FFC107;  /* Yellow theme */
+    color: #000;                /* Black text for contrast */
+    padding: 12px 30px;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 0;           /* Space above the button */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.download-cv-btn:hover {
+    background-color: #e0a800;  /* Darken on hover */
+    transform: translateY(-2px);
 }
 
 /* Resume Grid */
