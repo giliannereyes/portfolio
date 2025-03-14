@@ -28,13 +28,16 @@ header {
     margin: 0 auto;
 }
 
+/* Updated logo styling for clickable anchor */
 .logo {
     font-size: 1.5rem;
     font-weight: 700;
+    text-decoration: none; /* Remove underline */
+    color: #FFFFFF;        /* Set text color to white */
 }
 
 .logo span {
-    color: #FFC107; /* Highlight color for "Me." */
+    color: #FFC107; /* Highlight color for "Reyes" */
 }
 
 /* Nav Links */
