@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const typingElement = document.querySelector(".typing");
     const description = document.querySelector(".description");
     const contactButton = document.querySelector(".contact-btn");
-    const heroImage = document.querySelector(".hero-image img");
+    const heroImage = document.querySelector(".hero-image");
 
     // Step 1: Fade in "Hello, Welcome"
     subheading.style.opacity = "1";
@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", function () {
     setTimeout(() => {
         heroImage.style.opacity = "1";
         heroImage.style.animation = "fadeIn 1.5s ease-in forwards";
-    }, 5000); // Appears after button
+    }, 4000); // Appears after button
 });
 
 function typeText() {
