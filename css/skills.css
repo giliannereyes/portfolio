@@ -15,8 +15,10 @@
 .skills-container h2 {
     font-size: 2.5rem;
     margin-bottom: 10px;
+    color: #FFFFFF;
 }
-.skills-container h2 span {
+
+#skills-text {
     color: #FFC107; /* Gold highlight for "Skills" */
 }
 

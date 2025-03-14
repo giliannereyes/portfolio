@@ -6,6 +6,7 @@
     <title>About - Gilianne Reyes</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/about.css">
+    <script src="js/about.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
@@ -34,7 +35,7 @@
     <div class="about-container">
 
         <!-- LEFT BOX: IMAGE WITH LAYERED BOX EFFECT -->
-        <div class="image-container">
+        <div class="image-container fade-in">
             <div class="image-wrapper">
                 <!-- Replace with your own image -->
                 <img src="images/profile.png" alt="About Me Photo">
@@ -43,8 +44,11 @@
 
         <!-- RIGHT BOX: TEXT CONTENT -->
         <div class="text-container">
-            <h2>About <span>Me</span></h2>
-            <p>
+            <h2 class="typing">
+                <span id="about-text"></span>
+                <span id="me-text"></span>
+            </h2>
+            <p class="fade-in">
                 Hi! I'm Gilianne Reyes, a 19-year-old Computer Engineering student at NTNU.
                 I started coding in high school and have since worked on various personal projects to strengthen
                 my programming skills and apply them to practical applications. I approach development with a focus
@@ -52,10 +56,10 @@
                 I create are both efficient and maintainable. I am particularly interested in game development and AI,
                 which I aim to explore further in my studies and future career.
             </p>
-            <p>
+            <p class="fade-in">
                 In my free time, I enjoy traveling, reading books, and constantly learning new skills.
             </p>
-            <a href="contact.html" class="contact-btn">Contact me</a>
+            <a href="contact.html" class="contact-btn fade-in">Contact me</a>
         </div>
 
     </div>

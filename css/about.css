@@ -70,9 +70,8 @@
     color: #FFF; /* White text */
 }
 
-/* Highlight "Me" in gold */
-.text-container h2 span {
-    color: #FFC107;
+#me-text {
+    color: #FFC107; /* Gold color */
 }
 
 /* Paragraph styling */
@@ -100,6 +99,18 @@
     background-color: #C89E2C; /* Darken the gold on hover */
 }
 
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1.5s ease-out, transform 1.5s ease-out;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
 /* INTERESTS SECTION*/
 .interests-section {
     background-color: #1F1F2E; /* Dark navy background */
@@ -114,7 +125,7 @@
 }
 
 .interests-section h2 span {
-    color: #E3B341; /* Gold highlight */
+    color: #FFC107; /* Gold highlight */
 }
 
 .interests-section p {
